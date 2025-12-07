@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Nidnanap Survey Form</h1>
+    <p id="description">
+      Thank you for availing our services, as well as taking the time to help us
+      improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label id="number-label" for="number">Age (optional)</label>
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your age"
+          min="1"
+          max="99"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown">
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>Would you recommend Nidnanap to a friend?</p>
+        <label for="definitely">Definitely</label>
+        <input
+          type="radio"
+          id="definitely"
+          name="recommend"
+          value="Definitely"
+        />
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="maybe" name="recommend" value="Maybe" />
+        <label for="notsure">Not sure</label>
+        <input type="radio" id="notsure" name="recommend" value="Not sure" />
+      </fieldset>
+
+      <fieldset>
+        <label for="favorite-feature"
+          >What is your favorite feature of Nidnanap?</label
+        >
+        <select id="favorite-feature">
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <label for="challenges">Challenges</label>
+        <input
+          type="checkbox"
+          id="challenges"
+          name="improvements"
+          value="Challenges"
+        />
+        <label for="projects">Projects</label>
+        <input
+          type="checkbox"
+          id="projects"
+          name="improvements"
+          value="Projects"
+        />
+        <label for="community">Community</label>
+        <input
+          type="checkbox"
+          id="community"
+          name="improvements"
+          value="Community"
+        />
+        <label for="openSource">Open Source</label>
+        <input
+          type="checkbox"
+          id="openSource"
+          name="improvements"
+          value="Open Source"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="userstory">Any comments or suggestions?</label>
+        <textarea
+          id="userstory"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </fieldset>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
